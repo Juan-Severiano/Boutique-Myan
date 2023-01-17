@@ -1,0 +1,36 @@
+{% include 'app/partials/head.html' %}
+<body>
+    {% include 'app/partials/header.html' %}
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% for produto in produtos %}
+                {% include 'app/partials/produto.html' %}
+            {% empty %}
+                <h1>Sem Roupas</h1>
+            {% endfor %}
+        </div>
+    </main>
+    
+    {% include 'app/partials/footer.html' %}
+</body>
+</html>
